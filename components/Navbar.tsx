@@ -1,16 +1,15 @@
-import Link from "next/link"
-import Image from "next/image"
-import "@/app/globals.css";
+import Link from 'next/link';
+import styles from '@/app/styles/navbar.module.css';
 
 export default function Navbar() {
     return (
-        <nav>
-            <div>
-                <h1 className="logo">MDM</h1>
+        <nav className={styles.navbar}>
+            <div className={styles.logo}>
+                <Link href="/">Logo</Link>
             </div>
-            <Link href="/">Home</Link>
-            <Link href="/tasks">Task</Link>
-            <Link href="/dataquality">Data Quality</Link>
+            <div className={styles.userButton}>
+                <button>Profile</button>
+            </div>
         </nav>
-    )
+    );
 }

@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Head from "next/head";
 import Link from 'next/link';
-import styles from './styles/login.module.css'
+import styles from './styles/login.module.css';
+import RootLayout from "./layout";
 
 
 export default function Home() {

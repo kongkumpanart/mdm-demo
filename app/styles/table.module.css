@@ -1,6 +1,9 @@
 .dataTable {
-    width: 100%;
+    width: 88%;
     border-collapse: collapse;
+    margin-left: 225px;
+    position: relative;
+    top: -120px;
 }
 
 .dataTable th, .data-table td {

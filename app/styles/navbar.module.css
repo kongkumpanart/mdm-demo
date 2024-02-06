@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #402145;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.userButton button {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.sideNav {
+    height: 100%;
+    width: 200px;
+    background-color: #402145;
+    padding: 20px;
+}
+
+.sideNav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sideNav li {
+    margin-bottom: 10px;
+}
+
+.sideNav li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.mainContent {
+    flex-grow: 1;
+    padding: 20px;
+}
