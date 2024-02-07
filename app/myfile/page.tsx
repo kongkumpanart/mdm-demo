@@ -1,9 +1,13 @@
 import styles from '@/app/styles/table.module.css'
 import styles2 from '@/app/styles/upload.module.css'
+import SideNav from '@/components/SideNav';
+import Navbar from '@/components/Navbar';
 
 export default function MyFile() {
     return (
         <>
+        <Navbar />
+        <h1 className={styles.h1}>My File</h1>
         <div className={styles2.buttonContainer}>
             <button className={styles2.uploadButton}>Search</button>
             <button className={styles2.uploadButton}>Delete</button>
@@ -46,7 +50,7 @@ export default function MyFile() {
                     </tr>
                 </tbody>
         </table>
+        <SideNav />
         </>
-
     );
   }

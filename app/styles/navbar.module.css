@@ -1,52 +1,46 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-.navbar {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 1rem;
     background-color: #402145;
-    color: #fff;
-}
-
-.logo {
+    color: white;
+  }
+  
+  .logo {
     font-size: 1.5rem;
-}
-
-.userButton button {
-    background-color: transparent;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.sideNav {
-    height: 100%;
-    width: 200px;
+  }
+  
+  .user-button {
+    font-size: 1rem;
+  }
+  
+  .aside {
+    width: 100px;
     background-color: #402145;
-    padding: 20px;
-}
-
-.sideNav ul {
+    padding: 1rem;
+    height: 100vh;
+    position: absolute;
+    top: 78px; 
+    left: 0; 
+    z-index: 1; 
+  }
+  
+  .sideNavbar {
     list-style-type: none;
     padding: 0;
-}
-
-.sideNav li {
-    margin-bottom: 10px;
-}
-
-.sideNav li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-}
-
-.mainContent {
-    flex-grow: 1;
-    padding: 20px;
+  }
+  
+  .sideNavbar li {
+    padding: 0.5rem 0;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .main-content {
+    padding: 2rem;
+  }
+  
+  .profileIcon {
+    filter: brightness(0) invert(1);
 }

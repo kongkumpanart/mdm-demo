@@ -2,8 +2,6 @@
     width: 88%;
     border-collapse: collapse;
     margin-left: 225px;
-    position: relative;
-    top: -120px;
 }
 
 .dataTable th, .data-table td {
@@ -33,4 +31,12 @@
 .dataTable button:hover {
     background-color: #0056b3;
 }
-  
+
+.h1 {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    font-weight: bold; 
+    margin-left: 200px;
+}
