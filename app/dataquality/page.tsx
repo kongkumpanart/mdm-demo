@@ -1,13 +1,16 @@
 import Image from "next/image";
 import Head from "next/head";
 import { Button } from "@/components/ui/button"
+import SideNav from '@/components/SideNav';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export default function dataquality() {
   return (
     <>
-      <h1 className="mb-3 text-2xl font-semibold">Data Quality</h1>
-      <Button>Button</Button>
-
+      <Navbar />
+      <SideNav />
+      <Footer />
     </>
   );
 }

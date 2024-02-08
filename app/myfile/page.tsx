@@ -2,13 +2,14 @@ import styles from '@/app/styles/table.module.css'
 import styles2 from '@/app/styles/upload.module.css'
 import SideNav from '@/components/SideNav';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 import { Button } from "@/components/ui/button"
 import Image from 'next/image';
-import iconSearch from '@/public/search.png'
-import iconDelete from '@/public/delete1.png'
-import iconUpload from '@/public/upload.png'
-import iconDeleteRed from '@/public/delete.png'
-import iconEdit from '@/public/editing.png'
+import iconSearch from '@/public/search.png';
+import iconDelete from '@/public/delete1.png';
+import iconUpload from '@/public/upload.png';
+import iconDeleteRed from '@/public/delete.png';
+import iconEdit from '@/public/editing.png';
 
 
 export default function MyFile() {
@@ -73,6 +74,7 @@ export default function MyFile() {
                 </tbody>
         </table>
         <SideNav />
+        <Footer />
         </>
     );
   }

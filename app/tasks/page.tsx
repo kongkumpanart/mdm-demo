@@ -2,12 +2,13 @@ import styles from '@/app/styles/table.module.css'
 import styles2 from '@/app/styles/upload.module.css'
 import SideNav from '@/components/SideNav';
 import Navbar from '@/components/Navbar';
-import { Button } from "@/components/ui/button"
-import iconSearch from '@/public/search.png'
-import iconDelete from '@/public/delete1.png'
-import iconDeleteRed from '@/public/delete.png'
+import Footer from '@/components/Footer';
+import { Button } from "@/components/ui/button";
+import iconSearch from '@/public/search.png';
+import iconDelete from '@/public/delete1.png';
+import iconDeleteRed from '@/public/delete.png';
 import Image from 'next/image';
-import iconEdit from '@/public/editing.png'
+import iconEdit from '@/public/editing.png';
 
 export default function Task() {
     return (
@@ -69,6 +70,7 @@ export default function Task() {
                 </tbody>
         </table>
         <SideNav />
+        <Footer />
         </>
 
     );
