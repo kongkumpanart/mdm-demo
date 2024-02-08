@@ -16,7 +16,7 @@
   }
   
   .aside {
-    width: 100px;
+    width: 90px;
     background-color: #402145;
     padding: 1rem;
     height: 100vh;
@@ -29,12 +29,15 @@
   .sideNavbar {
     list-style-type: none;
     padding: 0;
+    margin-top: 50px;
   }
   
   .sideNavbar li {
     padding: 0.5rem 0;
     cursor: pointer;
     color: white;
+    margin-bottom: 10px;
+    margin-left: 10px;
   }
   
   .main-content {

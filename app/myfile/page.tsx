@@ -2,6 +2,14 @@ import styles from '@/app/styles/table.module.css'
 import styles2 from '@/app/styles/upload.module.css'
 import SideNav from '@/components/SideNav';
 import Navbar from '@/components/Navbar';
+import { Button } from "@/components/ui/button"
+import Image from 'next/image';
+import iconSearch from '@/public/search.png'
+import iconDelete from '@/public/delete1.png'
+import iconUpload from '@/public/upload.png'
+import iconDeleteRed from '@/public/delete.png'
+import iconEdit from '@/public/editing.png'
+
 
 export default function MyFile() {
     return (
@@ -9,9 +17,15 @@ export default function MyFile() {
         <Navbar />
         <h1 className={styles.h1}>My File</h1>
         <div className={styles2.buttonContainer}>
-            <button className={styles2.uploadButton}>Search</button>
-            <button className={styles2.uploadButton}>Delete</button>
-            <button className={styles2.uploadButton}>Upload</button>
+            <button>
+                <Image src={iconSearch} alt='search' width={24} height={24}></Image>
+            </button>
+            <button>
+                <Image src={iconDelete} alt='del' width={28} height={28}></Image>
+            </button>
+            <button>
+                <Image src={iconUpload} alt='upload' width={24} height={24}></Image>
+            </button>
         </div>
 
         <table className={styles.dataTable}>
@@ -33,8 +47,12 @@ export default function MyFile() {
                         <td>2024-01-25</td>
                         <td>2024-01-26</td>
                         <td>
-                            <button>Edit</button>
-                            <button>Delete</button>
+                            <Button variant="outline">
+                                <Image src={iconEdit} alt='edit' width={24} height={24}></Image>
+                            </Button>
+                            <Button variant="outline">
+                                <Image src={iconDeleteRed} alt='delRed' width={24} height={24}></Image>
+                            </Button>
                         </td>
                     </tr>
                     <tr>
@@ -44,8 +62,12 @@ export default function MyFile() {
                         <td>2024-01-24</td>
                         <td>2024-01-25</td>
                         <td>
-                            <button>Edit</button>
-                            <button>Delete</button>
+                            <Button variant="outline">
+                                <Image src={iconEdit} alt='edit' width={24} height={24}></Image>
+                            </Button>
+                            <Button variant="outline">
+                                <Image src={iconDeleteRed} alt='delRed' width={24} height={24}></Image>
+                            </Button>
                         </td>
                     </tr>
                 </tbody>
