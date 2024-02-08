@@ -24,9 +24,7 @@ export default function MyFile() {
             <button>
                 <Image src={iconDelete} alt='del' width={28} height={28}></Image>
             </button>
-            <button>
-                <Image src={iconUpload} alt='upload' width={24} height={24}></Image>
-            </button>
+            <Button className={styles2.uploadButton}>Upload</Button>
         </div>
 
         <table className={styles.dataTable}>
